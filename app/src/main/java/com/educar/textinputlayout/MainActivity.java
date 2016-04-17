@@ -34,10 +34,11 @@ public class MainActivity extends AppCompatActivity {
         /* Layout  al que asociamos el viewPager, y que hara que aparezcan
            correctamente el contenido de cady titulo correspondiente */
         TabLayout tabLayout = (TabLayout) findViewById(R.id.appbartabs);
-        tabLayout.setTabMode(TabLayout.GRAVITY_CENTER);
+        tabLayout.setTabMode(TabLayout.MODE_FIXED);
+        //tabLayout.setTabMode(TabLayout.GRAVITY_CENTER);
         tabLayout.setupWithViewPager(viewPager);
         TabLayout.Tab tab = tabLayout.getTabAt(0);
-        tab.setIcon(R.drawable.selector_new);
+       // tab.setIcon(R.drawable.selector_new); //añadir un icono
 
 
         aceptar.setOnClickListener(new View.OnClickListener() {

@@ -39,6 +39,6 @@ public class MiFragmentPageAdapter extends FragmentPagerAdapter {
     @Override
     public CharSequence getPageTitle(int position) {
         // Generate title based on item position
-        return null;
+        return tabTitles[position];
     }
 }
